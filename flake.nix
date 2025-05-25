@@ -30,12 +30,12 @@
               home-manager.useUserPackages = true;
               home-manager.users.gytis = import ./home/nixos/home.nix;
               home-manager.extraSpecialArgs = {
-	              inherit inputs nvim;
+	              inherit inputs nvim minimal-tmux;
 	            };
             }
           ];
           specialArgs = {
-            inherit inputs nvim;
+            inherit inputs nvim minimal-tmux;
           };
         };
       };
