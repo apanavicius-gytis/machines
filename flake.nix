@@ -16,7 +16,7 @@
     };
     
     nix-darwin = {
-      url = "github.com:nix-darwin/nix-darwin/master";
+      url = "github:nix-darwin/nix-darwin/nix-darwin-24.11";
       inputs.nixpgs.follows = "nixpkgs";
     };
   };
@@ -48,6 +48,13 @@
       darwinConfigurations."O-L7M2GF23"  = nix-darwin.lib.darwinSystem {
           modules = [
             ./hosts/ovoko-mac-m3-pro/configuration.nix
+            home-manager.darwinModules.home-manager
+            {
+              home-manager = {
+                users."gytis.apanavicius" = import ./home/ovoko-man-m3-pro/home.nix;
+              };
+              users.users."gytis.apanavicius".home = "/Users/gytis.apanavicius";
+            }
           ];
       };
     };
