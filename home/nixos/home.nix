@@ -8,6 +8,7 @@
     ./modules/rofi
     ./modules/gaming
     ./modules/hyprpaper
+    ./modules/ghostty # move back to common whenever ghostty is fixed in nixpkgs
   ];
 
   home = {

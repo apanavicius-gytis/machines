@@ -2,8 +2,8 @@
   description = "NixOS configuration";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    home-manager.url = "github:nix-community/home-manager/release-25.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
     nvim.url = "github:apanavicius-gytis/nvim";
@@ -16,7 +16,7 @@
     };
     
     nix-darwin = {
-      url = "github:nix-darwin/nix-darwin/nix-darwin-24.11";
+      url = "github:nix-darwin/nix-darwin/nix-darwin-25.05";
       inputs.nixpgs.follows = "nixpkgs";
     };
   };
@@ -45,13 +45,16 @@
         };
       };
 
-      darwinConfigurations."O-L7M2GF23"  = nix-darwin.lib.darwinSystem {
+      darwinConfigurations."O-L7M2GF23" = nix-darwin.lib.darwinSystem {
           modules = [
             ./hosts/ovoko-mac-m3-pro/configuration.nix
             home-manager.darwinModules.home-manager
             {
               home-manager = {
                 users."gytis.apanavicius" = import ./home/ovoko-man-m3-pro/home.nix;
+                extraSpecialArgs = {
+	                inherit inputs nvim minimal-tmux;
+	              };
               };
               users.users."gytis.apanavicius".home = "/Users/gytis.apanavicius";
             }

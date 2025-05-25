@@ -2,7 +2,6 @@
 {
   imports = [
     ./modules/tmux
-    ./modules/ghostty
     ./modules/zsh
     ./modules/git
   ];

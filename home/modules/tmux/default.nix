@@ -8,6 +8,12 @@
     ];
 
     extraConfig = ''
+      # Set default shell explicitly
+      set-option -g default-shell ${pkgs.zsh}/bin/zsh
+
+      # Start new windows as login shells (important!)
+      set-option -g default-command "exec ${pkgs.zsh}/bin/zsh -l"
+
       set -g base-index 1
       setw -g pane-base-index 1
 

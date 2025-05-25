@@ -9,7 +9,7 @@
     username = "gytis.apanavicius";
     homeDirectory = "/Users/gytis.apanavicius";
     stateVersion = "24.11";
-    shell.enableZshIntegration = true;
+       shell.enableZshIntegration = true;
 
     packages = [
     ];
