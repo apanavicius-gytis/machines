@@ -14,10 +14,15 @@
         url = "github:niksingh710/minimal-tmux-status";
         inputs.nixpkgs.follows = "nixpkgs";
     };
+    
+    nix-darwin = {
+      url = "github.com:nix-darwin/nix-darwin/master";
+      inputs.nixpgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
-    inputs@{ nixpkgs, home-manager, nvim, hyprland, minimal-tmux, ... }:
+    inputs@{ nixpkgs, home-manager, nvim, hyprland, minimal-tmux, nix-darwin, ... }:
     {
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
@@ -38,6 +43,12 @@
             inherit inputs nvim minimal-tmux;
           };
         };
+      };
+
+      darwinConfigurations."O-L7M2GF23"  = nix-darwin.lib.darwinSystem {
+          modules = [
+            ./hosts/ovoko-mac-m3-pro/configuration.nix
+          ];
       };
     };
 }
