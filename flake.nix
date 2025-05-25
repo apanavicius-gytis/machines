@@ -9,10 +9,15 @@
     nvim.url = "github:apanavicius-gytis/nvim";
 
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+
+    minimal-tmux = {
+        url = "github:niksingh710/minimal-tmux-status";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
-    inputs@{ nixpkgs, home-manager, nvim, hyprland, ... }:
+    inputs@{ nixpkgs, home-manager, nvim, hyprland, minimal-tmux, ... }:
     {
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {

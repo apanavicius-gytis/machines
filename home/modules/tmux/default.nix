@@ -1,9 +1,10 @@
-{pkgs, ...}:
+{pkgs, minimal-tmux, ...}:
 {
   programs.tmux = {
     enable = true;
     plugins = [
       pkgs.tmuxPlugins.sensible
+      { plugin = minimal-tmux.packages.${pkgs.system}.default; }
     ];
 
     extraConfig = ''
