@@ -11,6 +11,10 @@ Lix must be installed!
 in `/etc/nix/nix.conf` : 
 `experimental-features = nix-command flakes`
 
+move `configurations.nix` to `hosts/{machine_name}/configurations.nix`
+
+register new home-manager in `flake.nix` same as the other machines
+
 install nix-darwin with `sudo nix run nix-darwin/nix-darwin-24.11#darwin-rebuild -- switch`
 rebuild nix-darwin flake with home manager `sudo darwing-rebuild switch`
 
