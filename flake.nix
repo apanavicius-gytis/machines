@@ -39,9 +39,6 @@
 	            };
             }
           ];
-          specialArgs = {
-            inherit inputs nvim minimal-tmux;
-          };
         };
       };
 
