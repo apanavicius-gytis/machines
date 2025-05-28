@@ -1,4 +1,4 @@
-{ config, pkgs, hyprland, ... }:
+{ config, pkgs, ... }:
 
 {
   imports = [
@@ -9,9 +9,13 @@
     username = "gytis.apanavicius";
     homeDirectory = "/Users/gytis.apanavicius";
     stateVersion = "24.11";
-       shell.enableZshIntegration = true;
+    shell.enableZshIntegration = true;
 
     packages = [
+      pkgs.raycast
+      #k8s login
+      pkgs.kubelogin
+      pkgs.kubelogin-oidc
     ];
 
   };

@@ -7,8 +7,11 @@
   ];
 
   home.packages = with pkgs; [
+    # Development
     nvim.packages.${pkgs.system}.default
     lazygit
     ripgrep
+
+    # Entertainment
   ];
 }
