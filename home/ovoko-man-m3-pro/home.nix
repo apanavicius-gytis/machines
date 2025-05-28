@@ -13,6 +13,7 @@
 
     packages = [
       pkgs.raycast
+
       #k8s login
       pkgs.kubelogin
       pkgs.kubelogin-oidc
@@ -21,4 +22,5 @@
   };
 
   programs.home-manager.enable = true;
+  nixpkgs.config.allowUnfree = true;
 }
