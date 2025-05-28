@@ -19,7 +19,10 @@
   system.stateVersion = 5;
 
   # The platform the configuration will be used on.
-  nixpkgs.hostPlatform = "aarch64-darwin";
+  nixpkgs = {
+    hostPlatform = "aarch64-darwin";
+    config.allowUnfree = true;
+  };
 
   users.users."gytis.apanavicius" = {
     shell = pkgs.zsh;
