@@ -11,6 +11,7 @@
     nvim.packages.${pkgs.system}.default
     lazygit
     ripgrep
+    devenv
 
     # Entertainment
   ];
