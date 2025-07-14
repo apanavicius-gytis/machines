@@ -45,6 +45,7 @@
       darwinConfigurations."O-JJGK30Y6" = nix-darwin.lib.darwinSystem {
           modules = [
             ./hosts/ovoko-mac-m3-pro/configuration.nix
+            ./home/ovoko-man-m3-pro/launchd.nix
             home-manager.darwinModules.home-manager
             {
               home-manager = {
