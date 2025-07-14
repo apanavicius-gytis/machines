@@ -10,7 +10,9 @@
   enable-normalization-flatten-containers = false;
   enable-normalization-opposite-orientation-for-nested-containers = false;
 
-  on-focus-changed = "move-mouse window-lazy-center";
+  on-focus-changed = [
+        "move-mouse window-lazy-center"
+  ];
 
   on-focused-monitor-changed = [
     "move-mouse monitor-lazy-center"
