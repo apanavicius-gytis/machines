@@ -16,7 +16,7 @@ move `configurations.nix` to `hosts/{machine_name}/configurations.nix`
 register new home-manager in `flake.nix` same as the other machines
 
 install nix-darwin with `sudo nix run nix-darwin/nix-darwin-24.11#darwin-rebuild -- switch`
-rebuild nix-darwin flake with home manager `sudo darwing-rebuild switch`
+rebuild nix-darwin flake with home manager `sudo darwin-rebuild switch`
 
 ## Migrating stuff from homebrew (or app store) to Nix home-configuration
 `brew uninstall nvim` or remove it in any other way

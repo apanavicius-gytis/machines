@@ -12,9 +12,10 @@
     shell.enableZshIntegration = true;
 
     packages = [
-      pkgs.raycast
+      pkgs.slack
 
-      #k8s login
+      #k8s
+      pkgs.k9s
       pkgs.kubelogin
       pkgs.kubelogin-oidc
     ];

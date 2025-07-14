@@ -42,7 +42,7 @@
         };
       };
 
-      darwinConfigurations."O-L7M2GF23" = nix-darwin.lib.darwinSystem {
+      darwinConfigurations."O-JJGK30Y6" = nix-darwin.lib.darwinSystem {
           modules = [
             ./hosts/ovoko-mac-m3-pro/configuration.nix
             home-manager.darwinModules.home-manager
