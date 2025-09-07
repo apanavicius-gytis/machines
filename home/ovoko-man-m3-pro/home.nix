@@ -14,8 +14,11 @@
 
     packages = [
       pkgs.slack
+      pkgs.jetbrains.goland
+      pkgs.bruno
 
       #k8s
+      pkgs.kubectl
       pkgs.k9s
       pkgs.kubelogin
       pkgs.kubelogin-oidc
