@@ -23,6 +23,7 @@
   nixpkgs = {
     hostPlatform = "aarch64-darwin";
     config.allowUnfree = true;
+    config.allowUnsupportedSystem = true;
   };
 
   users.users."gytis.apanavicius" = {
