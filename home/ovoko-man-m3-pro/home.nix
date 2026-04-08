@@ -16,6 +16,7 @@
       pkgs.slack
       pkgs.jetbrains.goland
       pkgs.bruno
+      pkgs.netbird-ui
 
       #k8s
       pkgs.kubectl
