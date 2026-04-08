@@ -17,7 +17,6 @@
     devenv
     podman
     podman-compose
-    claude-code
 
     # Entertainment
     spotify
