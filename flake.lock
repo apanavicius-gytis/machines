@@ -655,11 +655,11 @@
         "pre-commit-hooks": "pre-commit-hooks_2"
       },
       "locked": {
-        "lastModified": 1775715066,
-        "narHash": "sha256-6yiKM1RU82OUiBvCaxW3I5vZX9HawlR8uesz7KmkC8g=",
+        "lastModified": 1775718020,
+        "narHash": "sha256-AEXUYNPy/QCQNOCF8nklzvmlClTtdiED4jMgGMUHbUI=",
         "owner": "apanavicius-gytis",
         "repo": "nvim",
-        "rev": "b687eeed80f6fc365063ccd04f1fa7a088eb71fe",
+        "rev": "c2688c86cb551ac31b445629ec95481df2df9851",
         "type": "github"
       },
       "original": {
