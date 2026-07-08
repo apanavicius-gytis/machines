@@ -4,7 +4,7 @@
   nix-homebrew = {
     enable = true;
     enableRosetta = true;
-    user = config.home.username;
+    user = "gytis.apanavicius";
     taps = {
       "homebrew/homebrew-core" = inputs.homebrew-core;
       "homebrew/homebrew-bundle" = inputs.homebrew-bundle;
