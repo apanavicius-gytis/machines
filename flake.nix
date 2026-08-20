@@ -19,10 +19,33 @@
       url = "github:nix-darwin/nix-darwin/nix-darwin-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-homebrew.url = "github:zhaofengli/nix-homebrew";
+
+    homebrew-core = {
+      url = "github:homebrew/homebrew-core";
+      flake = false;
+    };
+    homebrew-bundle = {
+      url = "github:homebrew/homebrew-bundle";
+      flake = false;
+    };
+    homebrew-cask = {
+      url = "github:homebrew/homebrew-cask";
+      flake = false;
+    };
+    homebrew-barutsrb = {
+      url = "github:barutsrb/homebrew-tap";
+      flake = false;
+    };
+    homebrew-gammons = {
+      url = "github:gammons/homebrew-tap";
+      flake = false;
+    };
   };
 
   outputs =
-    inputs@{ nixpkgs, home-manager, nvim, hyprland, minimal-tmux, nix-darwin, ... }:
+    inputs@{ nixpkgs, home-manager, nvim, hyprland, minimal-tmux, nix-darwin, nix-homebrew, ... }:
     {
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
@@ -43,8 +66,10 @@
       };
 
       darwinConfigurations."O-JJGK30Y6" = nix-darwin.lib.darwinSystem {
+          specialArgs = { inherit inputs; };
           modules = [
             ./hosts/ovoko-mac-m3-pro/configuration.nix
+            nix-homebrew.darwinModules.nix-homebrew
             ./home/ovoko-man-m3-pro/homebrew.nix
             home-manager.darwinModules.home-manager
             {

@@ -17,6 +17,7 @@
   # $ darwin-rebuild changelog
   system = {
     stateVersion = 5;
+    primaryUser = "gytis.apanavicius";
   };
 
   # The platform the configuration will be used on.
