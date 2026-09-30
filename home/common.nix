@@ -4,6 +4,7 @@
     ./modules/tmux
     ./modules/zsh
     ./modules/git
+    ./modules/nushell
   ];
 
   home.packages = with pkgs; [

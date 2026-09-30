@@ -41,7 +41,7 @@
     isNormalUser = true;
     description = "Gytis Apanavicius";
     extraGroups = [ "networkmanager" "wheel" ];
-    shell = pkgs.zsh;
+    shell = pkgs.nushell;
     packages = with pkgs; [
       libsForQt5.qt5.qtmultimedia
       libsForQt5.qt5.qtgraphicaleffects
@@ -92,6 +92,7 @@
   ###############################################################
   programs.hyprland.enable = true;
   programs.zsh.enable = true;
+  programs.nushell.enable = true;
 
   nix.settings = {
     experimental-features = ["nix-command" "flakes"];
