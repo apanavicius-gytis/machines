@@ -2,7 +2,8 @@
   programs.ghostty = {
     enable = true;
     settings = {
-      "shell-integration" = "zsh";
+      "shell-integration" = "detect";
+      "command" = "nu";
     };
   };
 }
