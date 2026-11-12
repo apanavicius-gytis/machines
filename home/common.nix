@@ -1,10 +1,16 @@
-{pkgs, nvim, ...}: 
+{pkgs, nvim, ...}:
 {
+  home.file.".my.cnf".text = ''
+    [mysql]
+    table
+  '';
+
   imports = [
     ./modules/tmux
     ./modules/zsh
     ./modules/git
     ./modules/nushell
+    ./modules/starship
   ];
 
   home.packages = with pkgs; [
