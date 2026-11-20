@@ -1,4 +1,4 @@
-{pkgs, nvim, ...}:
+{pkgs, pkgs-unstable ? pkgs, nvim, ...}:
 {
   home.file.".my.cnf".text = ''
     [mysql]
@@ -24,7 +24,7 @@
     devenv
     podman
     podman-compose
-    claude-code
+    pkgs-unstable.claude-code
 
     # Entertainment
     spotify

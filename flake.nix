@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
+    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
 
@@ -45,7 +46,7 @@
   };
 
   outputs =
-    inputs@{ nixpkgs, home-manager, nvim, hyprland, minimal-tmux, nix-darwin, nix-homebrew, ... }:
+    inputs@{ nixpkgs, nixpkgs-unstable, home-manager, nvim, hyprland, minimal-tmux, nix-darwin, nix-homebrew, ... }:
     {
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
@@ -77,6 +78,7 @@
                 users."gytis.apanavicius" = import ./home/ovoko-man-m3-pro/home.nix;
                 extraSpecialArgs = {
 	                inherit inputs nvim minimal-tmux;
+	                pkgs-unstable = nixpkgs-unstable.legacyPackages.aarch64-darwin;
 	              };
               };
               users.users."gytis.apanavicius".home = "/Users/gytis.apanavicius";
