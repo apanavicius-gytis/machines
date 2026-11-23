@@ -18,7 +18,7 @@
     google-chrome
 
     # Development
-    nvim.packages.${pkgs.system}.default
+    nvim.packages.${pkgs.stdenv.hostPlatform.system}.default
     lazygit
     ripgrep
     devenv
