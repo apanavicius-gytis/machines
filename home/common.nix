@@ -23,6 +23,7 @@
     # Development
     nvim.packages.${pkgs.stdenv.hostPlatform.system}.default
     lazygit
+    gh
     ripgrep
     devenv
     podman
