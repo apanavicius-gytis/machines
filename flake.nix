@@ -78,7 +78,10 @@
                 users."gytis.apanavicius" = import ./home/ovoko-man-m3-pro/home.nix;
                 extraSpecialArgs = {
 	                inherit inputs nvim minimal-tmux;
-	                pkgs-unstable = nixpkgs-unstable.legacyPackages.aarch64-darwin;
+	                pkgs-unstable = import nixpkgs-unstable {
+                  system = "aarch64-darwin";
+                  config.allowUnfree = true;
+                };
 	              };
               };
               users.users."gytis.apanavicius".home = "/Users/gytis.apanavicius";
