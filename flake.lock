@@ -200,11 +200,11 @@
     "homebrew-cask": {
       "flake": false,
       "locked": {
-        "lastModified": 1794377237,
-        "narHash": "sha256-dO1/x0Y18HN2sJ9zUNKFYnDdSkKoY5+0KguqxsZLc9w=",
+        "lastModified": 1795431937,
+        "narHash": "sha256-Rkpboz4dtqwebIqyPp89keZqU0cBNvvo9z+jNfNw1QA=",
         "owner": "homebrew",
         "repo": "homebrew-cask",
-        "rev": "f905bee272f114666126517896684cdf80e351e8",
+        "rev": "06fc59e1579d339f470bbb8999f414ff2f675925",
         "type": "github"
       },
       "original": {
@@ -216,11 +216,11 @@
     "homebrew-core": {
       "flake": false,
       "locked": {
-        "lastModified": 1794378886,
-        "narHash": "sha256-WWEqR62YuaUWBOVqJk4yhffKOIPVNt44BBMdxM6yzSE=",
+        "lastModified": 1795435615,
+        "narHash": "sha256-2s6ESE071Xqf4l2hIL7asRQbXBVXkzG5yoCQcvirAjk=",
         "owner": "homebrew",
         "repo": "homebrew-core",
-        "rev": "4d8fac34f74ec8d9b0bdb45a85187c47fbd4a6f2",
+        "rev": "d45bb356fd714d45c092db4c1378b6d193ed9c3f",
         "type": "github"
       },
       "original": {
@@ -232,11 +232,11 @@
     "homebrew-gammons": {
       "flake": false,
       "locked": {
-        "lastModified": 1794181974,
-        "narHash": "sha256-CpZDgoJIlaE5XWiy78mV1TcmAnLE3hcLf8CSrYGFM+A=",
+        "lastModified": 1795197544,
+        "narHash": "sha256-6fRKWlJYyFAOrh6uEWh6VUSB0IafoEpuE1dMSQXfhIA=",
         "owner": "gammons",
         "repo": "homebrew-tap",
-        "rev": "7e44a7ddaa1685b65d24c67dfa9d64c4cfb02617",
+        "rev": "7c7540aeebb33d03687e416cc16ca4f1a5ce0866",
         "type": "github"
       },
       "original": {
@@ -658,11 +658,11 @@
     },
     "nixpkgs-unstable": {
       "locked": {
-        "lastModified": 1795095985,
-        "narHash": "sha256-DOTZsOOoEtOY0ysY9L6JzyDHZm4lGBr6P1bt1mFXcRw=",
+        "lastModified": 1795249095,
+        "narHash": "sha256-8JDgyVvWUZg5m9hNlL8Ge9aT647ng3Ukc8NPMiKNTPQ=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "19cfded70b91ca0981373973c5b1efffdd4d6647",
+        "rev": "93a9ed0a866099a230ed5146a5bb7d16fd5c9b14",
         "type": "github"
       },
       "original": {
@@ -764,11 +764,11 @@
         "pre-commit-hooks": "pre-commit-hooks_2"
       },
       "locked": {
-        "lastModified": 1794321111,
-        "narHash": "sha256-S6lRZePSCxYrTfc4FW7bwpl++cu51ZpqJL7ptrBNR0k=",
+        "lastModified": 1795435197,
+        "narHash": "sha256-HVEuCpdr3xIvTEDvFOosMWlffspPO0qSqroH7LcuwMM=",
         "owner": "apanavicius-gytis",
         "repo": "nvim",
-        "rev": "3b74a3ba8af7402ab40f72e1c358afb1cb85a582",
+        "rev": "127aef3e7fcc54a36a04a139efd0f0d7ce7e70c4",
         "type": "github"
       },
       "original": {
