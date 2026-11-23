@@ -3,6 +3,9 @@
   home.file.".my.cnf".text = ''
     [mysql]
     table
+
+    [client]
+    disable-ssl-verify-server-cert
   '';
 
   imports = [
